@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": [
+      "esnext"
+    ],
+    //
+    "baseUrl": "lib",
+    "outDir": "dist",
+    "paths": {
+      // lib
+      "@/*": [
+        "./*"
+      ],
+      // config
+      "@config/*": [
+        "./config/*"
+      ],
+      // logger
+      "@logger/*": [
+        "./logger/*"
+      ],
+      // app
+      "@source/*": [
+        "./source/*"
+      ],
+      // api
+      "@api/*": [
+        "./source/api/*"
+      ],
+      // app
+      "@app/*": [
+        "./source/app/*"
+      ],
+      // app
+      "@client/*": [
+        "./source/app/client/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "lib/types"
+    ],
+    //
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    //
+    "skipLibCheck": true,
+    //
+    "strict": true,
+    "pretty": true
+  },
+  "include": [
+    "lib"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
