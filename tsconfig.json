@@ -1,0 +1,25 @@
+{
+  "extends": "@meslzy/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "source",
+    "paths": {
+      "~/*": [
+        "*"
+      ],
+      "~api/*": [
+        "api/*"
+      ],
+      "~app/*": [
+        "app/*"
+      ]
+    }
+  },
+  "include": [
+    "source",
+    "rosepack.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

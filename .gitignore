@@ -1,0 +1,12 @@
+# ide
+.idea/
+
+# node
+node_modules/
+package-lock.json
+
+# project
+dist/
+
+# env
+.env
